@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aztek Tex-Mex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="setLang('ru')">Рус</button>
+    <button onclick="setLang('pl')">PL</button>
+  </div>
+  <h1 id="title">Меню</h1>
+  <div id="menu-container" class="menu-grid"></div>
+  <div id="cart-container">
+    <h2 id="cart-title">Корзина</h2>
+    <ul id="cart-list"></ul>
+    <div id="cart-total"></div>
+    <button id="submit-order" onclick="submitOrder()">Оформить заказ</button>
+  </div>
+  <script src="menu.js"></script>
+</body>
+</html>
